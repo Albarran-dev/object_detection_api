@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "turing-challenge-entry-challenge"
+version = "0.1.0"
+description = ""
+authors = ["Albarran <albarran9696@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.7"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+python-multipart = "^0.0.5"
+pillow = "^9.3.0"
+tensorflow = {extras = ["cpu"], version = "^2.11.0"}
+tensorflow-hub = "^0.12.0"
+numpy = "^1.23.5"
+pydantic = "^1.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.19.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
