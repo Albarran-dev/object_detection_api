@@ -11,7 +11,6 @@ from utils import preprocess_image, prettify_result
 
 # model_handle = "./model/ssd_mobilenet_v2_2"
 model_handle = "./model/faster_rcnn_inception_resnet_v2_640x640_1"
-# model_handle = "/Users/alvaro_albarran/github/turing_challenge_entry_challenge/app/model/ssd_mobilenet_v2_2"
 
 detector = hub.load(model_handle).signatures["serving_default"]
 

@@ -14,7 +14,6 @@ IDX_TO_CLASS = {
 
 def preprocess_image(file, input_shape=INPUT_SHAPE):
     pil_image = Image.open(BytesIO(file.read()))
-    pil_image = pil_image.resize(input_shape)
     img = np.array(pil_image)
     img = np.expand_dims(img, 0)
     img_tensor = tf.convert_to_tensor(img, tf.uint8)
