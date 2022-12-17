@@ -2,3 +2,4 @@ __pycache__
 data/
 app/model/
 notebooks/
+.python-version

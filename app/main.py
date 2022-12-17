@@ -9,8 +9,7 @@ from fastapi import FastAPI, File, UploadFile
 from utils import preprocess_image, prettify_result
 
 
-# model_handle = "./model/ssd_mobilenet_v2_2"
-model_handle = "./model/faster_rcnn_inception_resnet_v2_640x640_1"
+model_handle = "https://tfhub.dev/tensorflow/faster_rcnn/inception_resnet_v2_640x640/1"
 
 detector = hub.load(model_handle).signatures["serving_default"]
 
